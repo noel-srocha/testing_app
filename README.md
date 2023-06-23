@@ -4,13 +4,41 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1) Clone or fork the project and type the command below on your project terminal:
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter create .
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This will recreate all platforms specific native code that is necessary when building Flutter projects.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you need only some specific platforms, run the command below:
+
+```
+flutter create --platforms android,ios . // windows, macos, linux, web 
+```
+
+2) Make sure you have all the dependencies set up:
+
+```
+flutter pub get
+```
+
+3) Add your tests at the specified folders:
+
+```
+/integration_test
+/test
+/test_driver
+```
+
+4) Use the following commands to your applicaton (it's recommend that you have a device ready if you plan to run the test on it):
+
+```
+flutter test
+flutter test {file_test.dart path}
+flutter run {file_test.dart path}
+flutter test --coverage
+```
+
+5) Start Coding and have fun!
